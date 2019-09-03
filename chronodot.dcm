@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Chronodot
+D Chronodot
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+F https://www.adafruit.com/product/255
+$ENDCMP
+#
+#End Doc Library
