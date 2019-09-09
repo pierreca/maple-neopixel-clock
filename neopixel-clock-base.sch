@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -75,8 +75,6 @@ Connection ~ 1450 3700
 Connection ~ 3900 4550
 NoConn ~ 3400 2950
 NoConn ~ 3400 3050
-NoConn ~ 3400 3450
-NoConn ~ 3400 3550
 NoConn ~ 3400 3650
 NoConn ~ 3400 3750
 NoConn ~ 3400 3850
@@ -129,8 +127,6 @@ F 3 "~" H 1900 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2850 4550
-Wire Wire Line
-	1450 2400 2950 2400
 Wire Wire Line
 	1450 4550 2850 4550
 Wire Wire Line
@@ -195,8 +191,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 4000 3200 4000
 NoConn ~ 3400 4050
-NoConn ~ 3400 4150
-NoConn ~ 3400 4250
 $Comp
 L chronodot:Chronodot U0
 U 1 1 5C58C2A9
@@ -288,4 +282,52 @@ F 3 "~" H 2850 4550 50  0001 C CNN
 	1    2850 4550
 	-1   0    0    1   
 $EndComp
+$Comp
+L Switch:SW_Push SW0
+U 1 1 5D75E2DB
+P 1750 4350
+F 0 "SW0" H 1750 4635 50  0000 C CNN
+F 1 "SW_Push" H 1750 4544 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1750 4550 50  0001 C CNN
+F 3 "~" H 1750 4550 50  0001 C CNN
+	1    1750 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D764D3A
+P 2300 4450
+F 0 "SW1" H 2300 4735 50  0000 C CNN
+F 1 "SW_Push" H 2300 4644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2300 4650 50  0001 C CNN
+F 3 "~" H 2300 4650 50  0001 C CNN
+	1    2300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4450 1550 4450
+Wire Wire Line
+	1450 2400 1550 2400
+Wire Wire Line
+	1550 2400 1550 4350
+Connection ~ 1550 2400
+Wire Wire Line
+	1550 2400 2950 2400
+Connection ~ 1550 4350
+Wire Wire Line
+	1550 4350 1550 4450
+NoConn ~ 3400 4150
+NoConn ~ 3400 4250
+Wire Wire Line
+	3400 3450 3250 3450
+Wire Wire Line
+	3250 3450 3250 4350
+Wire Wire Line
+	1950 4350 3250 4350
+Wire Wire Line
+	3300 4450 3300 3550
+Wire Wire Line
+	3300 3550 3400 3550
+Wire Wire Line
+	2500 4450 3300 4450
 $EndSCHEMATC
