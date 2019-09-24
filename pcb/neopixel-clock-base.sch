@@ -128,7 +128,7 @@ F 3 "~" H 1900 3900 50  0001 C CNN
 $EndComp
 Connection ~ 2850 4550
 Wire Wire Line
-	1450 4550 2850 4550
+	1450 4550 1550 4550
 Wire Wire Line
 	2850 4550 3200 4550
 $Comp
@@ -304,18 +304,6 @@ F 3 "~" H 2300 4650 50  0001 C CNN
 	1    2300 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4450 1550 4450
-Wire Wire Line
-	1450 2400 1550 2400
-Wire Wire Line
-	1550 2400 1550 4350
-Connection ~ 1550 2400
-Wire Wire Line
-	1550 2400 2950 2400
-Connection ~ 1550 4350
-Wire Wire Line
-	1550 4350 1550 4450
 NoConn ~ 3400 4150
 NoConn ~ 3400 4250
 Wire Wire Line
@@ -330,4 +318,16 @@ Wire Wire Line
 	3300 3550 3400 3550
 Wire Wire Line
 	2500 4450 3300 4450
+Wire Wire Line
+	1450 2400 2950 2400
+Wire Wire Line
+	1550 4350 1550 4550
+Connection ~ 1550 4550
+Wire Wire Line
+	1550 4550 2100 4550
+Wire Wire Line
+	2100 4450 2100 4550
+Connection ~ 2100 4550
+Wire Wire Line
+	2100 4550 2850 4550
 $EndSCHEMATC
